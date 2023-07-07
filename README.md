@@ -46,7 +46,7 @@ Rotas
 ## Exemplos de uso
 **POST - Write**
 Endpoint: `http://localhost:3000/api/db/write`  
-Description: Add data to the "users" table.
+Descrição: Adiciona dados no "users" table. Se o ID já existir, então um **UPDATE** é feito no documento existente.
 Body:
 ```json
 {
@@ -62,7 +62,7 @@ Body:
 
 **GET - Get filtered data**
 Endpoint: `http://localhost:3000/api/db/read`  
-Description: Retrieve filtered data from the "users" table.
+Descrição: Filtra dados do "users" table usando o campo *email*.
 Body:
 ```json
 {
@@ -78,8 +78,8 @@ Body:
 
 **DELETE - Delete**
 Endpoint: `http://localhost:3000/api/db/delete?id=3`  
-Description: Delete data from the "users" table with ID 3.
+Descrição: Deleta dados do "users" tablepelo ID do documento, nesse caso, o ID 3.
 
 **GET - Get all data from a specific table**
 Endpoint: `http://localhost:3000/api/db/read?table=users`  
-Description: Retrieve all data from the "users" table.
+Descrição: Retrieve todos os dados do "users" table.
