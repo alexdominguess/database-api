@@ -45,7 +45,7 @@ Rotas
 
 ## Exemplos de uso
 **POST - Write**
-Endpoint: `http://localhost:3000/api/db/write`
+Endpoint: `http://localhost:3000/api/db/write`  
 Description: Add data to the "users" table.
 Body:
 ```json
@@ -61,7 +61,7 @@ Body:
 ```
 
 **GET - Get filtered data**
-Endpoint: `http://localhost:3000/api/db/read`
+Endpoint: `http://localhost:3000/api/db/read`  
 Description: Retrieve filtered data from the "users" table.
 Body:
 ```json
@@ -77,9 +77,9 @@ Body:
 ```
 
 **DELETE - Delete**
-Endpoint: `http://localhost:3000/api/db/delete?id=3`
+Endpoint: `http://localhost:3000/api/db/delete?id=3`  
 Description: Delete data from the "users" table with ID 3.
 
 **GET - Get all data from a specific table**
-Endpoint: `http://localhost:3000/api/db/read?table=users`
+Endpoint: `http://localhost:3000/api/db/read?table=users`  
 Description: Retrieve all data from the "users" table.
